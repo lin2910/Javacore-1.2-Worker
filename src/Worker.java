@@ -11,7 +11,8 @@ public class Worker {
         for (int i = 0; i < 100; i++) {
             if (i == 33)
                 errorCallback.onDone("Error in task " + i);
-            callback.onDone("Task " + i + " is done");
+            else
+                callback.onDone("Task " + i + " is done");
         }
     }
 }
